@@ -49,7 +49,7 @@ class FileStorage:
         return: object or None
         """
         all_classes = self.all(cls)
-        if all_classes is not None:
+        if all_classes is not None and id is not None:
             for obj in all_classes.values():
                 if id == str(obj.id):
                     return obj
