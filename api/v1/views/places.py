@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Create a new view for Place objects that handles all default RESTFul API actions"""
+"""Creates view for Place objects to handle default RESTFul API actions"""
 
 from api.v1.views import app_views
 from flask import abort, jsonify, make_response, request
