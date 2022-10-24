@@ -21,6 +21,4 @@ def stats():
     for element in all_type:
         stats_object_by_type[element] = storage.count(all_type[element])
     stats_object_by_type = jsonify(stats_object_by_type)
-    stats_object_by_type.status = 200
-
     return stats_object_by_type
